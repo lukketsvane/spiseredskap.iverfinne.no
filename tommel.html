@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Tommel — Spisereiskap for born</title>
+  <meta name="description" content="P1. Spisereiskap for born — Tommel. Eit leikande og organisk spiseredskap for små born." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module" src="js/model-viewer.min.js"></script>
+</head>
+<body>
+  <main class="sheet sheet--tommel" data-page="tommel">
+    <div class="meta-side">
+      <span class="meta-item">IVER RAKNES FINNE</span>
+      <span class="meta-item">16.05.2026</span>
+      <span class="meta-item">GK4 AHO INTRODUKSJON INDUSTRIDESIGN</span>
+    </div>
+
+    <header class="topbar">
+      <span class="topbar-dot"></span>
+      <span class="topbar-text">P1. SPISEREISKAP FOR BORN</span>
+      <nav class="pagenav">
+        <a href="index.html">E.T.</a>
+        <a href="tommel.html" class="is-active">Tommel</a>
+        <a href="tunge.html">Tunge</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <!-- Left column: text + specs -->
+      <section class="content">
+        <h1 class="title">TOMMEL</h1>
+
+        <div class="body">
+          <p>Dette spisereiskapet er utforma med ei leikande og organisk form som vekkjer nysgjerrigheit hjå små born ved måltidet. Den enkle, nesten figurative silhuetten gjer produktet lett å kjenne att og lett å gripe.</p>
+          <p>Det avrunda tverrsnittet ligg godt i små hender, medan den djupe skeiforma gjer det lettare å samle og føre maten. Dei vertikale rilene gjev både taktilitet og eit tydeleg formspråk.</p>
+        </div>
+
+        <dl class="specs">
+          <div class="spec-row"><dt>Materiale</dt><dd>Lønn</dd></div>
+          <div class="spec-row"><dt>Overflate</dt><dd>Bio-olje (matsikker)</dd></div>
+          <div class="spec-row"><dt>Mål</dt><dd>90 × 60 × 31 mm</dd></div>
+          <div class="spec-row"><dt>Vekt</dt><dd>ca. 45 g</dd></div>
+          <div class="spec-row"><dt>Aldersgruppe</dt><dd>2–4 år</dd></div>
+          <div class="spec-row"><dt>Tverrsnitt</dt><dd>Organisk form for godt grep</dd></div>
+        </dl>
+      </section>
+
+      <!-- Centre: 3D model (the photographed object) -->
+      <section class="stage">
+        <model-viewer
+          class="viewer"
+          src="models/tommel.glb"
+          alt="Tommel — spisereiskap i tre, 3D-modell"
+          camera-controls
+          auto-rotate
+          auto-rotate-delay="0"
+          rotation-per-second="22deg"
+          interaction-prompt="none"
+          shadow-intensity="0.9"
+          shadow-softness="1"
+          exposure="1.05"
+          environment-image="neutral"
+          camera-orbit="0deg 82deg 105%"
+          min-field-of-view="22deg"
+          max-field-of-view="40deg"
+          touch-action="pan-y">
+        </model-viewer>
+      </section>
+
+      <!-- Right: technical drawings -->
+      <section class="drawings drawings--tommel" aria-hidden="true">
+        <figure class="dwg dwg-elevation">
+          <svg viewBox="0 0 200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- dimension: width 50 -->
+            <g class="dim">
+              <line x1="58" y1="34" x2="142" y2="34" />
+              <line x1="58" y1="28" x2="58" y2="40" />
+              <line x1="142" y1="28" x2="142" y2="40" />
+              <text x="100" y="26" text-anchor="middle">50 mm</text>
+            </g>
+            <!-- body: rounded-top cylinder with vertical riller -->
+            <path class="ln" d="M58 100c0-23 19-42 42-42s42 19 42 42v150c0 14-19 26-42 26s-42-12-42-26z" />
+            <line class="ln rille" x1="70" y1="74" x2="70" y2="268" />
+            <line class="ln rille" x1="82" y1="64" x2="82" y2="272" />
+            <line class="ln rille" x1="94" y1="60" x2="94" y2="274" />
+            <line class="ln rille" x1="106" y1="60" x2="106" y2="274" />
+            <line class="ln rille" x1="118" y1="64" x2="118" y2="272" />
+            <line class="ln rille" x1="130" y1="74" x2="130" y2="268" />
+            <!-- scoop opening (ellipse top) -->
+            <ellipse class="ln" cx="100" cy="100" rx="42" ry="14" />
+            <ellipse class="ln faint" cx="100" cy="108" rx="30" ry="9" />
+            <!-- dimension: height 120 -->
+            <g class="dim">
+              <line x1="158" y1="58" x2="158" y2="276" />
+              <line x1="152" y1="58" x2="164" y2="58" />
+              <line x1="152" y1="276" x2="164" y2="276" />
+              <text x="172" y="170" text-anchor="middle" transform="rotate(90 172 170)">120 mm</text>
+            </g>
+            <!-- dimension: top opening 30 -->
+            <g class="dim">
+              <line x1="58" y1="100" x2="58" y2="58" />
+              <line x1="142" y1="100" x2="142" y2="58" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure class="dwg dwg-section">
+          <svg viewBox="0 0 200 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="ln" cx="86" cy="78" r="56" />
+            <g class="dim">
+              <line x1="86" y1="78" x2="142" y2="78" />
+              <line x1="142" y1="72" x2="142" y2="84" />
+              <text x="120" y="70" text-anchor="middle">25 mm</text>
+            </g>
+            <text class="caption" x="86" y="156" text-anchor="middle">TVERRSNITT</text>
+          </svg>
+        </figure>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
